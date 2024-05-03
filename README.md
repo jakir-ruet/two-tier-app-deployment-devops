@@ -73,3 +73,33 @@ Composer install
 apt-get install composer -y
 composer # check whether
 ```
+
+Clone & give permission the application into html directory
+```bash
+git clone https://github.com/jakir-ruet/php-laravel-crud-app.git
+chmod -R 775 html
+chmod -R 775 php-laravel-crud-app
+nano /etc/hosts
+172.16.246.132 phplaravel.app
+```
+
+In .env file
+```bash
+APP_NAME=Laravel
+APP_ENV=production
+APP_KEY=base64:/zvzlgYJYDCUE1dzUaRDc5MZS6jugi1Tc1II2KQ0Gts=
+APP_DEBUG=false
+APP_URL=http://phplaravel.app
+```
+```bash
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=dbcrud
+DB_USERNAME=root
+DB_PASSWORD=Sql@054003
+```
+```bash
+composer update
+php artisan key:gen
+```

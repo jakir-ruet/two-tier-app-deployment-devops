@@ -71,4 +71,5 @@ php -m # check installed extension.
 Composer install
 ```bash
 apt-get install composer -y
+composer # check whether
 ```

@@ -26,12 +26,13 @@ apt-get install apache2 -y
 apt-get install mysql-server -y
 sudo mysql_secure_installation # for assign security
 ```
-Would you like to setup VALIDATE PASSWORD component? Press y|Y for Yes, any other key for No: y
-Please enter 0 = LOW, 1 = MEDIUM and 2 = STRONG: 2
-Remove anonymous users? (Press y|Y for Yes, any other key for No) : y
-Disallow root login remotely? (Press y|Y for Yes, any other key for No) : n
-Remove test database and access to it? (Press y|Y for Yes, any other key for No) : y
-Reload privilege tables now? (Press y|Y for Yes, any other key for No) : y
+Console ask we some questions.
+- Would you like to setup VALIDATE PASSWORD component? Press y|Y for Yes, any other key for No: y
+- Please enter 0 = LOW, 1 = MEDIUM and 2 = STRONG: 2
+- Remove anonymous users? (Press y|Y for Yes, any other key for No) : y
+- Disallow root login remotely? (Press y|Y for Yes, any other key for No) : n
+- Remove test database and access to it? (Press y|Y for Yes, any other key for No) : y
+- Reload privilege tables now? (Press y|Y for Yes, any other key for No) : y
 
 Login to MySQL
 ```bash

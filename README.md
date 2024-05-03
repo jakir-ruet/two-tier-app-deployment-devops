@@ -50,6 +50,7 @@ GRANT ALL PRIVILEGES ON YourDatabase.* TO 'root'@'localhost' WITH GRANT OPTION;
 FLUSH PRIVILEGES;
 ```
 
+IP & Port binding for remote access using Azure Data Studio/MySQL Workbench (Optional)
 ```bash
 netstat -tulpen #Check mysql server is listening on a socket with netstat:
 bind-address = 0.0.0.0 # we may bind IP & port each other in `/etc/mysql/my.cnf` file
